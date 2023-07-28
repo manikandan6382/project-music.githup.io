@@ -1,0 +1,53 @@
+<div class="main-box">
+    <!-- Content for the first box goes here -->
+  </div>
+  <div class="fixed-box">
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, autem. Animi aspernatur modi, autem eaque recusandae aliquid quaerat delectus omnis sapiente tenetur hic harum saepe distinctio magnam optio perspiciatis ratione.</p>
+</div>
+  
+
+
+<script>
+document.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var fixedBox = document.querySelector('.fixed-box');
+  
+  if (scrollPosition > 0) {
+    fixedBox.classList.add('show');
+  } else {
+    fixedBox.classList.remove('show');
+  }
+});
+
+</script>
+
+.main-box {
+    height: 100vh; /* Set the height of the first box */
+    background-color: #f86161; /* Example background color */
+  }
+  
+  .fixed-box {
+    position: fixed;
+    bottom: -200px; /* Set the initial position of the second box below the viewport */
+    left: 0;
+    width: 100%;
+    height: 200px; /* Set the height of the second box */
+    background-color: #0f0b0b; /* Example background color */
+    transition: bottom 0.5s; /* Add a transition effect for smooth reveal */
+  }
+  
+  .fixed-box.show {
+    bottom: 0; /* Set the final position of the second box to be visible */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
