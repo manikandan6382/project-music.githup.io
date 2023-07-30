@@ -215,8 +215,9 @@ form{
             padding: 14px;
             background-color:#1b1a1a;
             z-index: 1;
-// 
+ 
         }
+        
 .nav-all  {
     text-align: center;
     color: $second;
@@ -225,18 +226,21 @@ form{
     justify-content: space-between;
     overflow:scroll;
     white-space: nowrap;
-    
+    .dropdown-item{
+        background-color: #000000;
+        
+    }
   }
+  
   .nav-all::-webkit-scrollbar {
     display: none;
   }
   .nav-all a {
     cursor: pointer;
     padding: 10px;
-    // width: 100px;
     text-decoration: none;
     color: $second-light;
-    font-weight: 630;
+    font-weight:630 ;
    
   }
   a:hover{
@@ -255,11 +259,10 @@ form{
   .carousel-item.prev {
     transform: translateX(-100%);
   }
-// content
+
 .content{
     margin-top: 10rem;
     height: 100vh;
-    // background-color: #6aa4fc;
     .content-img{
        width: 100%;
        img{
@@ -332,14 +335,12 @@ form{
       }
 .about{
     display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-// grid-template-columns: 1fr 1fr 1fr ;
+   grid-template-columns: repeat(auto-fit, minmax(190px,1fr));
    justify-content: space-around;
    border-top: 1px solid #333;
    p{
     color: $second;
     font-weight: bold;
-    // text-align: center;
   }
    a{
     color: $second-light;
@@ -396,15 +397,74 @@ form{
 	color: rgb(231, 113, 133);
 }
 }
-@media (max-width:1000px){
-    .card-4{
-        display: none;
+footer{
+    h3{
+        cursor: pointer;
+        transition: 650ms;
+    }
+    & h3:hover{
+        color: $second-light;
+        
     }
 }
-@media(max-width:650px){
-    .card-3{
-        display: none;
+.focuss{
+display: grid;
+grid-template-columns: repeat( 4, 1fr ) ;
+    overflow:scroll;
+    .card{
+    width: 250px;
     }
+}
+.focuss::-webkit-scrollbar {
+    display: none;
+  }
+
+@media(max-width:650px){
+    .focuss{
+        .card{
+            width: 200px;
+            }
+    }
+    footer{
+      
+        .div1{   
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+     }
+     .div2{   
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+     }
+     .div3{   
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 7;
+     }
+}
+}
+@media(max-width:450px){
+    .logo{
+        height: 70px;
+        img{
+            
+            width: 160px !important ; 
+            height: 100%;
+        }
+    }
+    .na-link{
+    top: 21vh !important;
+  }
+  .na-show{
+    width: 70% !important ;   
+}
 }
 @media only screen and  (max-width:710px)  {
     .na-link{
@@ -413,12 +473,12 @@ form{
         flex-direction: column;
         position: absolute;
       // left: -30px;
-        right: -13%;
-        top: 22.5vh;
+        right: -16%;
+        top: 22.1vh;
         width: 0;
         padding: 1.5rem;
         padding-left: 2rem;
-        height: 80vh;
+        height: 70vh;
         overflow: hidden;
         white-space: nowrap;
         transition:  all 450ms;
@@ -458,7 +518,6 @@ form{
       
       .logo{
         height: 70px;
-        // width: 10%;
         img{
             
             width: 100%;
@@ -490,8 +549,7 @@ form{
 }
 .na-show{
     right: 0;
-    width: 50%;
-   
+    width: 55%;
 }
 
 

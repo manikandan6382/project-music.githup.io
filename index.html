@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  <title>music</title>
- <link rel="icon" type="icon" href="aish/aish3.jpg">
+ <link rel="icon" type="icon" href="image/img2.jpg">
 
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css    ">    
 
@@ -93,7 +93,7 @@
 </ul>
 
 <div class="navbar">
-    <!-- <a class="logo" href="#">Your Logo</a> -->
+    
     <form class="search-form" action="#">
         <div class="search-container">
           <input type="text" placeholder="Search..." name="search">
@@ -115,18 +115,12 @@
     <i data-bs- class="fa-solid fa-bars  dropdown" data-bs-toggle="dropdown">           
     </i>
 <div class="dropdown-menu" >
-    <!-- <div class="login-logo">
-  <a href="#"><i class="fa-regular fa-user"></i>
-  Home</a>
-  </div> -->
+  
   <div class="login-logo">
     <a href="#">  <i class="fa fa-music"></i>
       My Music</a>
     </div>
-  <!-- <div class="login-logo">
-  <a href="#"><i class="fa-regular fa-user"></i>
-  hellotunes</a>
-  </div> -->
+ 
   <div class="login-logo">
   <a href="#"><i class="fas fa-microphone-alt"></i>
   Radio</a>
@@ -135,10 +129,7 @@
     <a href="#"><i class="fas fa-language"></i>
       Select Language</a>
     </div>
-  <!-- <div class="login-logo">
-  <a href="#"><i class="fa-regular fa-user"></i>
-  Download App</a>
-  </div> -->
+ 
   <div class="login-logo">
   <a href="#"><i class="fas fa-volume-up"></i>
   Sound Quality</a>
@@ -156,9 +147,24 @@
         <a class="all text-light">All</li>
         <a class="all">Trending Now</li>
         <a class="all">Old Songs</a>
-        <a class="all dropdown-toggle">Top Albums</a>
+        <a class="all dropdown-toggle" data-bs-toggle="dropdown" id="topalbum">Top Albums </a>
+        <div class="dropdown-menu " aria-labelledby="topalbum" >
+          <a href="#" class="dropdown-item"  style="background-color: black;">Top English Albums</a>
+          <a href="#" class="dropdown-item">Top Tamil Albums</a>      
+               <a href="#" class="dropdown-item">Top Hindi Albums </a>
+          <a href="#" class="dropdown-item">Top K-pop Albums </a>
+        </div>
         <a class="all">New Songs</a>
-        <a class="all dropdown-toggle">Top Artist</a>
+<a class="all dropdown-toggle" data-bs-toggle="dropdown" id="topartist">Top Artist </a>
+<div class="dropdown-menu " aria-labelledby="topartist" >
+<a href="#" class="dropdown-item">DJ Snake Tunes </a>
+<a href="#" class="dropdown-item">A.R. Rahuman </a>
+<a href="#" class="dropdown-item">Harrish Jayaraj </a>
+<a href="#" class="dropdown-item">Justin Bieber</a>
+<a href="#" class="dropdown-item">The Weeknd</a>
+
+
+</div>
 
     </div>
 </div>
@@ -219,7 +225,7 @@
     <a href="#" class="move-to-end">Show all</a>
   </div>
   <div class=" container-fluid  container-lg   mt-3">
-  <div class="d-flex ">
+  <div class="  focuss">
     <div class="card  card-1 " >
       <img src="image/woman-playing-piano.jpg" class="card-img-top " alt="music">
       <div class="card-body">
@@ -261,7 +267,7 @@
 </div>
 
 <div class=" container-fluid  container-lg   mt-3">
-  <div class="d-flex ">
+  <div class="focuss ">
     <div class="card  card-1 " >
       <img src="image/caucasian-woman-s-portrait-isolated-blue-background-multicolored-neon-light.jpg" class="card-img-top " alt="music">
       <div class="card-body">
@@ -303,7 +309,7 @@
 </div>
 
 <div class=" container-fluid  container-lg   mt-3">
-  <div class="d-flex ">
+  <div class="focuss ">
     <div class="card  card-1 " >
       <img src="image/img12.jpg" class="h-100 card-img-top " alt="music">
       <div class="card-body">
@@ -345,7 +351,7 @@
 </div>
 
 <div class=" container-fluid  container-lg   mt-3">
-  <div class="d-flex ">
+  <div class="focuss ">
     <div class="card  card-1 " >
       <img src="image/img16.jpg" class="h-100 card-img-top " alt="music">
       <div class="card-body">
@@ -380,25 +386,26 @@
 </div>
 
 </div>
-<footer class="container   p-sm-3  pt-md-5 ps-md-5 pe-md-5 pb-md-2 rounded-5 mt-5">
-  <div class="">
+<footer class="container-fluid p-2  p-sm-3 p-3  pt-md-5 ps-md-5 pe-md-5 pb-md-2  rounded-5  mt-5 "  style="width: 90%;" >
+  <div class="div1 mt-2">
     <h3>About Endless Music</h3>
     <p>Enless Music is a complete package that allows you free online music streaming, set caller tunes, listen to podcasts, download MP3 music offline, and much more! Since music is essentially the only thing that can truly understand a person, we consistently offer our audience the ideal blend of MP3 Songs by their favourite artists and of versatile genres.</p>
   </div>
 
-  <div class="">
+  <div class="div2 mt-2">
     <h3>Play & Download FREE MP3 Songs in all languages</h3>
     <p>One of the unique features of Wynk Music is that it offers users the ability to stream music in multiple regional languages, including Hindi, Punjabi, Bengali, Tamil, Telugu, and more. Also, users of the app can download MP3 songs for offline listening. This online music platform provides access to additional features such as offline listening, high-quality audio, and exclusive content.</p>
   </div>
 
-  <div class="">
+  <div class="div3 mt-2">
     <h3>Endless Music – One Stop Destination for Offline & Online Music!</h3>
-    <p>Endless Music offers users access to a vast library of music, including Indian and international tracks across various genres like Bollywood, Punjabi, pop, rock, and more. We have made online music streaming simple, fun, and all about you! So, what’s the wait for, discover and listen to millions of songs, playlists, podcasts & download MP3 songs on any device including mobile for free exclusively on Wynk Music. Keep Wynking!</p>
+    <p>Endless Music offers users access to a vast library of music, including Indian and international tracks across various genres like Bollywood, Punjabi, pop, rock, and more. We have made online music streaming simple, fun, and all about you! So, what’s the wait for, discover and listen to millions of songs, playlists, podcasts & download MP3 songs on any device including mobile for free exclusively on Enless Music. Keep Wynking!</p>
   </div>
 
 </footer>
-<div class="rr m-0 p-0  ">
-<div class="about p-4 mt-5 " >
+
+<div class="  container-fluid  m-0 p-0  ">
+<div class="about  pt-5 mt-5 " >
   <div class="company ">
 <ul>
   <p>Company</p>
@@ -408,7 +415,7 @@
 </ul>
   </div>
 
-  <div class="company ">
+  <div class="company  ">
     <ul>
       <p>Communities</p>
       <li><a href="#">For Artist</a></li>
